@@ -56,3 +56,11 @@ let season = prompt("Donnez moi une saison");
 let degree = prompt("Donnez moi une température");
 
 meteo(season, degree);
+
+// Notion rapide du DOM
+// Pour sélectionner un élément HTML avec JS et pouvoir écrire sur la page
+
+let title = document.querySelector("h2");
+console.log(title);
+
+title.innerHTML = "Voici mon deuxième titre";
