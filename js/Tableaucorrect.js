@@ -45,4 +45,57 @@ console.log(array);
 let start = array.shift();
 console.log(array);
 
-// Supprimer un élément 
+// Supprimer un élément  par son index
+let suppIndex = array.splice(1, 2); // On supprime deux éléments à partir de la 2ème position
+console.log(array);
+
+// LES OBJETS
+
+// Déclarer un objet vide
+
+let obj = {};
+console.log(obj);
+
+// ajouter une nouvelle valeur dans l'objet
+obj.phone = "Iphone";
+console.log(obj);
+
+// Système clé => valeur / key => value
+let obj2 = {
+	// key --- value
+	phone: "Iphone",
+	desktop: "Windows",
+};
+
+console.log(obj2);
+
+// pour ajouter un objet dans notre tableau précédent
+let newArray = array.push(obj2);
+
+console.log(array);
+
+let family = [
+	{
+		father: "François",
+		mother: "Jeannine",
+	},
+	{
+		sister: "Lucienne",
+
+		phone: "06898798",
+	},
+];
+
+let family2 = {
+	father: "François",
+	mother: "Jeannine",
+};
+
+console.log(family2.father);
+
+console.log(family.length);
+
+for (let i = 1; i < family.length; i++) {
+	console.log(family[0].mother);
+	document.write(`<p>${family[1].phone} et ${family[1].sister}</p>`);
+}
